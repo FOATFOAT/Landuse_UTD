@@ -1,0 +1,143 @@
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+.card-registration .select-arrow {
+    top: 13px;
+}
+
+.bg-dark { /* สีพื้นหลัง */
+    background-color:  #f3e5f5!important;
+}
+
+.text-section{ /* สีหัวข้อใหญ่ */
+    color: #311b92;
+}
+
+.font-sg{  /* สีหัวข้อ */
+    font-size: 18px;
+    color: #4a148c;
+}
+.font-sm{
+    font-size: 23px;
+}
+
+input[type="radio"]:disabled + label {
+    color: #000000; /* สีข้อความเมื่อ radio disabled */
+}
+input[type="radio"]:disabled:checked + label {
+    color: #000000; /* สีข้อความเมื่อ radio disabled และ checked */
+}
+
+.error_text {
+    border: 1px solid #FF3333; /* บนเเดง ล่างเขียว สีกรอบตรวจสอบว่ามีข้อมูลไหม */
+}
+.success_text {
+    border: 1px solid #00CC00;
+}
+
+.b {
+    font-weight: bold; /*ตัวหน้าหัวข้อ */
+}
+
+
+.image_show { /* แสดงรูปทั้งหดมยกเว้นโฉนดที่ดิน */
+    display: none;
+    margin: auto;
+    width: 300px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+.selected-image {
+    width: 300px;
+    height: auto;
+}
+
+
+.image-container { /* รูปโฉนดที่ดิน */
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.image-item {
+    /* margin: 20px; */
+    /* border: 3px solid rgb(0, 0, 0); */
+    margin: auto;
+    position: relative;
+    /* padding: 10px; */
+    margin-bottom: 20px;
+    
+}
+.delete-icon {
+    /* padding: 5px; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.upload-status {
+    color: green;
+}
+
+/* เลือกตำแหน่งที่ต้องการปรับขนาดตัวอักษร */
+.cookie-preferences-title {
+    font-size: 30px; /* ปรับขนาดตัวอักษรตามที่คุณต้องการ */
+}
+
+
+/* .ssss {
+    border: 1px solid #000000;
+    background-color: #eeeeee;
+    color: #000000;
+    padding: 8px 13px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+} */
+
+/* คุกกี้ */
+.theme_funky {
+    --cc-bg: #f9faff;
+    --cc-text: #112954;
+    --cc-btn-primary-bg: #3859d0;
+    --cc-btn-primary-text: var(--cc-bg);
+    --cc-btn-primary-hover-bg: #1d2e38;
+    --cc-btn-secondary-bg: #dfe7f9;
+    --cc-btn-secondary-text: var(--cc-text);
+    --cc-btn-secondary-hover-bg: #c6d1ea;
+    --cc-toggle-bg-off: #DC143C;
+    --cc-toggle-bg-on: #3859d0;
+    --cc-toggle-bg-readonly: #7da0e2;
+    --cc-toggle-knob-bg: #fff;
+    --cc-toggle-knob-icon-color: #ecf2fa;
+    --cc-block-text: var(--cc-text);
+    --cc-cookie-category-block-bg: #ebeff9;
+    --cc-cookie-category-block-bg-hover: #dbe5f9;
+    --cc-section-border: #f1f3f5;
+    --cc-cookie-table-border: #e1e7f3;
+    --cc-overlay-bg: rgba(230, 235, 255, .85);
+    --cc-webkit-scrollbar-bg: #ebeff9;
+    --cc-webkit-scrollbar-bg-hover: #3859d0;
+    
+}
+
+.theme_funky #c-ttl{
+    color: var(--cc-btn-primary-bg);
+    
+}
+
+/* รัศมีเส้นขอบที่กำหนดเอง */
+.theme_funky #cm,
+.theme_funky #s-bl .act .b-acc,
+.theme_funky #s-inr,
+.theme_funky .cc_div .b-tl,
+.theme_funky .cc_div .c-bl{
+    border-radius: 1.2em;
+}
+
+.theme_funky .cc_div .c-bn{
+    border-radius: .7em;
+}

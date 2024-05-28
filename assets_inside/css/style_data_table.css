@@ -1,0 +1,47 @@
+
+.icon_search{
+
+    width: 20px; /* ปรับขนาดตามต้องการ */
+    height: 20px; /* ปรับขนาดตามต้องการ */
+
+}
+
+
+
+.dataTables_length{
+    margin-right: 10px;
+  }
+  
+   /* ตกแต่งปุ่ม DataTables */
+  div.dt-buttons .dt-button {
+      background-color: #007bff; /* เปลี่ยนสีพื้นหลัง */
+      color: white; /* เปลี่ยนสีข้อความ */
+      padding: 8px 16px; /* ตั้งค่าการเว้นขอบภายใน */
+      text-align: center; /* ตั้งค่าการจัดตำแหน่งข้อความ */
+      text-decoration: none; /* ลบการขีดเส้นใต้ */
+      display: inline-block; /* ตั้งค่าแสดงบล็อกภายในบรรทัด */
+      font-size: 14px; /* ตั้งค่าขนาดตัวอักษร */
+  
+      cursor: pointer; /* ตั้งค่าลักษณะเคอร์เซอร์ */
+      border-radius: 4px; /* ตั้งค่ารัศมีขอบ */
+  }
+  
+  div.dt-buttons .dt-button:hover {
+      background-color: #0056b3; /* เปลี่ยนสีพื้นหลังเมื่อมีการ hover */
+  }
+  
+
+
+    
+.myTable_DATA th, .myTable_DATA td {
+    border: 1px solid #ddd; /* ตั้งค่าเส้นขอบ */
+
+}
+
+.myTable_DATA th {
+    padding-top: 12px; /* ตั้งค่าการเว้นขอบภายในด้านบน */
+    padding-bottom: 12px; /* ตั้งค่าการเว้นขอบภายในด้านล่าง */
+    text-align: left; /* ตั้งค่าการจัดตำแหน่งข้อความ */
+    background-color: #f2f2f2; /* ตั้งค่าสีพื้นหลัง */
+    color: black; /* ตั้งค่าสีข้อความ */
+}
