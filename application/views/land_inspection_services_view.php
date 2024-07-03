@@ -1680,15 +1680,16 @@ function displayPostalCode() { //นำค่า id ตำบลมาแล้�
 }
 
 
-$(document).ready(function() { // ชื่อไฟล์ PHP ที่ใช้ดึงวันที่
+$(document).ready(function() {
+        var url = "<?php echo base_url('admin/today_thai/'); ?>"; // สร้าง URL ด้วย PHP และนำมาใช้ใน JavaScript
         $.ajax({
-            url: "<?php echo base_url('admin/today_thai/'); ?>", // ชื่อไฟล์ PHP ที่ใช้ดึงวันที่
+            url: url, // ใช้ URL ที่สร้างด้วย PHP
             method: "POST",
             success: function(data) {
                 $('#today').val(data);
             }
         });
-});
+    });
 
 
 var check_emailRadio = '';
