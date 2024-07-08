@@ -322,7 +322,8 @@ class Admin extends CI_Controller {
 			}
 			else{
 				// echo "fดดดดด";
-				$this->member_model->form_enter_information_person(); //คน
+				// $this->member_model->form_enter_information_person(); //คน
+				$this->member_model->form_enter_information_cpn();
 
 
 				

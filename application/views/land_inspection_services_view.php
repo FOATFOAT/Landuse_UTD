@@ -237,14 +237,14 @@ if(isset($_POST['captchaInput'])) {
                   <div class="col-md-3 mb-4">
                     <div class="form-outline">
                         <label class="form-label font-sg b" for="provinces">จังหวัด</label>
-                      <input type="text" id="provinces" class="form-control " value="จังหวัดอุตรดิตถ์" disabled="disabled" />
+                      <input type="text" id="provinces" class="form-control " value="อุตรดิตถ์" disabled="disabled" />
                     </div>
                   </div>
 
                   <div class="col-md-3 mb-4">
                     <div class="form-outline">
                         <label class="form-label font-sg b" for="zip_code">รหัสไปรษณีย์</label>
-                      <input type="text" id="zip_code" class="form-control font-sg"  placeholder="รหัสไปรษณีย์"  disabled="disabled" />
+                      <input type="text" id="zip_code" class="form-control font-sg"  placeholder="กรุณาเลือกอำเภอและตำบล"  disabled="disabled" />
                     </div>
                   </div>
 
@@ -1680,15 +1680,16 @@ function displayPostalCode() { //นำค่า id ตำบลมาแล้�
 }
 
 
-$(document).ready(function() { // ชื่อไฟล์ PHP ที่ใช้ดึงวันที่
+$(document).ready(function() {
+        var url = "<?php echo base_url('admin/today_thai/'); ?>"; // สร้าง URL ด้วย PHP และนำมาใช้ใน JavaScript
         $.ajax({
-            url: "<?php echo base_url('admin/today_thai/'); ?>", // ชื่อไฟล์ PHP ที่ใช้ดึงวันที่
+            url: url, // ใช้ URL ที่สร้างด้วย PHP
             method: "POST",
             success: function(data) {
                 $('#today').val(data);
             }
         });
-});
+    });
 
 
 var check_emailRadio = '';

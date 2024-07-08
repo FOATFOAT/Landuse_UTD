@@ -343,6 +343,7 @@ class Member_model extends CI_Model {
                     // สร้างข้อมูลที่จะบันทึก
                     $img_company_certificate[] = array(
                         'img_company_certificate' => $newname1,
+                        'company_name' => $this->input->post('company_name'),
                         'company_id' => $new_company_id,                                       
                     );
                     // $data_copy_land[] = array(
@@ -453,7 +454,7 @@ class Member_model extends CI_Model {
         $tableName = 'bl_submit_company';
         $data = array(
             'company_id' => $new_company_id,
-            'company_name' => $this->input->post('company_name'),
+            // 'company_name' => $this->input->post('company_name'),
             'title_name_company' => $this->input->post('title_name'),
             'firstname_company' => $this->input->post('firstname'),
             'lastname_company' => $this->input->post('lastname'),
