@@ -237,14 +237,14 @@ if(isset($_POST['captchaInput'])) {
                   <div class="col-md-3 mb-4">
                     <div class="form-outline">
                         <label class="form-label font-sg b" for="provinces">จังหวัด</label>
-                      <input type="text" id="provinces" class="form-control " value="จังหวัดอุตรดิตถ์" disabled="disabled" />
+                      <input type="text" id="provinces" class="form-control " value="อุตรดิตถ์" disabled="disabled" />
                     </div>
                   </div>
 
                   <div class="col-md-3 mb-4">
                     <div class="form-outline">
                         <label class="form-label font-sg b" for="zip_code">รหัสไปรษณีย์</label>
-                      <input type="text" id="zip_code" class="form-control font-sg"  placeholder="รหัสไปรษณีย์"  disabled="disabled" />
+                      <input type="text" id="zip_code" class="form-control font-sg"  placeholder="กรุณาเลือกอำเภอและตำบล"  disabled="disabled" />
                     </div>
                   </div>
 
